@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>打字游戏</title>
+<link rel="stylesheet" type="text/css" href="./mycss.css"/>
+<script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+<!-- 欢迎界面图标 -->
+<div id="welcomeImg" align="center">
+	<div id="mainLogo">
+    	<img src="img/logo.png" width="600px" height="300px" />
+    </div>
+    <div id="mainBtn">
+    	<img src="img/4.png" onmousedown="this.src='img/3.png'" onmouseup="this.src='img/4.png'" onclick="window.alert('该游戏来自第一小组：邓稳、陈开洋、赵静雯、辜友发')" />
+        <img src="img/2.png" onmousedown="this.src='img/1.png'" onmouseup="this.src='img/2.png'" onclick="startGame();" />
+    </div>
+</div>
+<!-- 游戏界面 -->
+<div id="playImg">
+	<div class="backBtn">
+    	<img src="img/7.png" onmousedown="this.src='img/6.png'" onmouseup="this.src='img/7.png'" onclick="backToMain();" />
+    </div>
+    <div id="words">
+    </div>
+    <div class="optionBtn">
+    	<img id="jj" src="img/11.png" onmousedown="this.src='img/10.png'" onmouseup="this.src='img/11.png'" onclick="suspend();" />
+        <img id="ss" src="img/9.png" onmousedown="this.src='img/8.png'" onmouseup="this.src='img/9.png'" onclick="install();" />
+    </div>
+</div>
+</body>
+</html>
